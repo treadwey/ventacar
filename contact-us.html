@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Flokibroker</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="triangle"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="atlanta">Flokibroker</span>
+                    <span class="premier">PREMIER AUTOS</span>
+                </div>
+            </div>
+            
+            <div class="header-info">
+                <div class="contact-info">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>24 Harris Dr SE UNIT 100, Marietta, GA 30067</span>
+                    </div>
+                    <div class="phone-email">
+                        <span>SALES: (470) 945-7439</span>
+                        <span>EMAIL: Flokibroker@gmail.com</span>
+                    </div>
+                </div>
+                
+                <div class="social-language">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="language-selector">
+                        <i class="fab fa-google"></i>
+                        <span>Select Language</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="navigation">
+              <ul class="nav-menu">
+                <li><a href="/index (1).html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Inventory</a></li>
+                <li><a href="/apply-online.html" class="nav-link">Apply Online</a></li>
+                <li><a href="/contact-us.html" class="nav-link active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="page-title">Contact Us</h1>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="contact-form-section">
+                <div class="form-intro">
+                    <p>If you need help with any aspect of the buying process, please don't hesitate to ask us. Our customer service representatives will be happy to assist you in any way. Whether through email, phone or in person, we're here to help you get the customer service you deserve.</p>
+                    <p class="required-note">All fields marked with an asterisk (*) are required</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name *" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email *" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-preference">
+                        <label>Contact Preference</label>
+                        <div class="preference-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactPref" value="phone" checked>
+                                <span class="checkmark"></span>
+                                Phone
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactPref" value="email" checked>
+                                <span class="checkmark"></span>
+                                Email
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactPref" value="sms">
+                                <span class="checkmark"></span>
+                                SMS
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message *" rows="6" maxlength="1024" required></textarea>
+                        <div class="character-count">
+                            <span id="charCount">0</span>/1024 characters left
+                        </div>
+                    </div>
+
+                    <div class="terms-section">
+                        <p class="terms-text">
+                            By checking this box and by clicking the "SUBMIT" button below, I consent to receive information by email, telephone call, including those made with an automatic telephone dialing system or an artificial or pre-recorded voice, and/or SMS message from or on behalf of this dealership, and/or their representatives at any contact information I provide above, even if I am on a state or federal Do-Not-Call list. I understand that calls and messages may incur access fees from my cellular provider. This acknowledgment constitutes my written consent to receive such communications. I have read and agree to the Privacy Policy of this dealership.
+                        </p>
+                        <label class="checkbox-label terms-checkbox">
+                            <input type="checkbox" id="acceptTerms" required>
+                            <span class="checkmark"></span>
+                            I accept all the above terms
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <div class="sidebar">
+                <div class="dealer-info">
+                    <h3>Atlanta's Premier Autos</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>atlantaspremierautos@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(470) 945-7439</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <div>24 Harris Dr SE UNIT 100</div>
+                            <div>Marietta, GA 30067</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="store-hours">
+                    <h3>Store Hours</h3>
+                    <div class="hours-list">
+                        <div class="hour-item">
+                            <span class="day">Monday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Tuesday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Wednesday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Thursday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Friday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 2:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">CLOSED</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>DEALER ADDRESS</h4>
+                    <div class="address-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>24 Harris Dr SE UNIT 100,</p>
+                            <p>Marietta, GA 30067</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>DEALER INFO</h4>
+                    <div class="dealer-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(470) 945-7439</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Flokibroker@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>STORE HOURS</h4>
+                    <div class="hours-info">
+                        <h5>HOURS OF OPERATION</h5>
+                        <p>Mon - Fri : 9:00 AM - 6:00 PM</p>
+                        <p>Sat : 10:00 AM - 2:00 PM</p>
+                        <p>Sun : CLOSED</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-follow">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="/index (1).html">HOME</a>
+                <a href="#">INVENTORY</a>
+                <a href="/apply-online.html">APPLY ONLINE</a>
+                <a href="/contact-us.html" class="active">CONTACT US</a>
+                <a href="/privacy-policy.html">PRIVACY POLICY</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Atlanta's Premier Autos</p>
+                <p>Website by: <strong>DealerCenter</strong></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/scripts/contact.js"></script>
+</body>
+</html>

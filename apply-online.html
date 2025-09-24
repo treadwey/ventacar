@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Online - Flokibroker</title>
+    <link rel="stylesheet" href="/css/apply.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="triangle"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="atlanta">Flokibroker</span>
+                    <span class="premier">PREMIER AUTOS</span>
+                </div>
+            </div>
+            
+            <div class="header-info">
+                <div class="contact-info">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>24 Harris Dr SE UNIT 100, Marietta, GA 30067</span>
+                    </div>
+                    <div class="phone-email">
+                        <span>SALES: (470) 945-7439</span>
+                        <span>EMAIL: Flokibroker@gmail.com</span>
+                    </div>
+                </div>
+                
+                <div class="social-language">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="language-selector">
+                        <i class="fab fa-google"></i>
+                        <span>Select Language</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li><a href="/index (1).html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Inventory</a></li>
+                <li><a href="/apply-online.html" class="nav-link active">Apply Online</a></li>
+                <li><a href="/contact-us.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="page-title">Online Credit Application</h1>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="content-grid">
+                    <!-- Application Form -->
+                    <div class="form-section">
+                        <div class="form-header">
+                            <p>Fill out our Online Credit Application to qualify now.</p>
+                            <p class="form-subtitle">We respect your privacy. Any information you provide is confidential and will be used solely to assist with your vehicle purchase.</p>
+                        </div>
+
+                        <form class="credit-application-form" id="creditForm">
+                            <!-- Step Indicator -->
+                            <div class="step-indicator">
+                                <div class="step active">STEP 1</div>
+                                <div class="step">STEP 2</div>
+                            </div>
+
+                            <div class="form-note">
+                                * Fields marked with an asterisk are required.
+                            </div>
+
+                            <!-- Personal Information -->
+                            <div class="form-section-title">Personal Information</div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="middleName">Middle Name</label>
+                                    <input type="text" id="middleName" name="middleName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="suffix">Suffix</label>
+                                    <select id="suffix" name="suffix">
+                                        <option value="">Select Suffix</option>
+                                        <option value="Jr">Jr</option>
+                                        <option value="Sr">Sr</option>
+                                        <option value="II">II</option>
+                                        <option value="III">III</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dateOfBirth">Date of Birth *</label>
+                                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ssn">SSN *</label>
+                                    <input type="text" id="ssn" name="ssn" placeholder="XXX-XX-XXXX" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phoneHome">Phone (Home) Number</label>
+                                    <input type="tel" id="phoneHome" name="phoneHome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneCell">Phone (Cell) Number *</label>
+                                    <input type="tel" id="phoneCell" name="phoneCell" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phoneWork">Phone (Work) Number</label>
+                                    <input type="tel" id="phoneWork" name="phoneWork">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneWorkExt">Phone (Work) Ext</label>
+                                    <input type="text" id="phoneWorkExt" name="phoneWorkExt">
+                                </div>
+                            </div>
+
+                            <!-- Residential Information -->
+                            <div class="form-section-title">Residential Information</div>
+                            
+                            <div class="form-row">
+                                <div class="form-group full-width">
+                                    <label for="address">Address *</label>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State *</label>
+                                    <select id="state" name="state" required>
+                                        <option value="">Select State</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="TN">Tennessee</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zipCode">Zip Code *</label>
+                                    <input type="text" id="zipCode" name="zipCode" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="housingType">Housing Type *</label>
+                                    <select id="housingType" name="housingType" required>
+                                        <option value="">Select Housing Type</option>
+                                        <option value="Own">Own</option>
+                                        <option value="Rent">Rent</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="monthlyPayment">Monthly Rent/Mortgage Payment *</label>
+                                    <input type="number" id="monthlyPayment" name="monthlyPayment" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="yearsAtAddress">Years at Address *</label>
+                                    <input type="number" id="yearsAtAddress" name="yearsAtAddress" required>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="addPrevious" name="addPrevious">
+                                <label for="addPrevious">Add Previous Address</label>
+                            </div>
+
+                            <!-- Employment Information -->
+                            <div class="form-section-title">Employment Information</div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="employer">Employer *</label>
+                                    <input type="text" id="employer" name="employer" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="jobTitle">Job Position *</label>
+                                    <input type="text" id="jobTitle" name="jobTitle" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="employerPhone">Employer Phone Number *</label>
+                                    <input type="tel" id="employerPhone" name="employerPhone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="monthlyIncome">Monthly Gross Income *</label>
+                                    <input type="number" id="monthlyIncome" name="monthlyIncome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="yearsEmployed">Years at Job *</label>
+                                    <input type="number" id="yearsEmployed" name="yearsEmployed" required>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="addPrevEmployment" name="addPrevEmployment">
+                                <label for="addPrevEmployment">Add Previous Employment</label>
+                            </div>
+
+                            <!-- References -->
+                            <div class="form-section-title">References</div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="refName">Name</label>
+                                    <input type="text" id="refName" name="refName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="refRelation">Relation</label>
+                                    <input type="text" id="refRelation" name="refRelation">
+                                </div>
+                                <div class="form-group">
+                                    <label for="refPhone">Phone</label>
+                                    <input type="tel" id="refPhone" name="refPhone">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="refName2">Name</label>
+                                    <input type="text" id="refName2" name="refName2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="refRelation2">Relation</label>
+                                    <input type="text" id="refRelation2" name="refRelation2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="refPhone2">Phone</label>
+                                    <input type="tel" id="refPhone2" name="refPhone2">
+                                </div>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="addReference" name="addReference">
+                                <label for="addReference">Add Reference</label>
+                            </div>
+
+                            <!-- Terms and Conditions -->
+                            <div class="terms-section">
+                                <p class="terms-text">
+                                    By clicking "Submit" I am authorizing the use of the information I have provided to obtain my credit report and credit score from one or more consumer reporting agencies, such as TransUnion, Experian and/or Equifax, and from alternative data sources. I understand that this will be recorded as an inquiry on my credit report and may impact my credit score. I understand that I am under no obligation to purchase any product or service and I may opt out by calling the dealer. I certify that the information provided is true and complete. I understand that any false information may result in the rejection of my application or cancellation of any resulting contract. I authorize the dealer and its agents to contact me about this application and future promotions using the information I have provided, including calls or texts to wireless numbers that may result in charges to me.
+                                </p>
+                                <p class="terms-text">
+                                    I understand that the dealer will retain this information whether or not I purchase a vehicle. The information I have provided will be used to process my request and the dealer may share this information with its affiliates and with potential assignees of any resulting contract or potential purchasers of such contract. Please see the dealer's privacy policy for information on the dealer's privacy practices.
+                                </p>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                <label for="agreeTerms">I accept all the above terms</label>
+                            </div>
+
+                            <button type="submit" class="submit-button">SUBMIT</button>
+                        </form>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <div class="dealer-info">
+                            <h3>Atlanta's Premier Autos</h3>
+                            <div class="dealer-details">
+                                <p><strong>📍 SALES DEPT - LOT</strong></p>
+                                <p>4615 Buford Hwy NE Unit 108A</p>
+                                <p>Atlanta, GA 30341</p>
+                                <p>📞 (404) 474-7433</p>
+                            </div>
+
+                            <div class="store-hours">
+                                <h4>Store Hours</h4>
+                                <div class="hours-list">
+                                    <div class="hour-item">
+                                        <span>Monday</span>
+                                        <span>9:00 AM - 8:00 PM</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Tuesday</span>
+                                        <span>9:00 AM - 8:00 PM</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Wednesday</span>
+                                        <span>9:00 AM - 8:00 PM</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Thursday</span>
+                                        <span>9:00 AM - 8:00 PM</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Friday</span>
+                                        <span>9:00 AM - 8:00 PM</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Saturday</span>
+                                        <span>10:00 AM - 7:00 PM</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Sunday</span>
+                                        <span>CLOSED</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>DEALER ADDRESS</h4>
+                    <div class="address-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>24 Harris Dr SE UNIT 100,</p>
+                            <p>Marietta, GA 30067</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>DEALER INFO</h4>
+                    <div class="dealer-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(470) 945-7439</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Flokibroker@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>STORE HOURS</h4>
+                    <div class="hours-info">
+                        <h5>HOURS OF OPERATION</h5>
+                        <p>Mon - Fri : 9:00 AM - 6:00 PM</p>
+                        <p>Sat : 10:00 AM - 2:00 PM</p>
+                        <p>Sun : CLOSED</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-follow">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="/index (1).html">HOME</a>
+                <a href="#">INVENTORY</a>
+                <a href="/apply-online.html" class="active">APPLY ONLINE</a>
+                <a href="/contact-us.html">CONTACT US</a>
+                <a href="/privacy-policy.html" >PRIVACY POLICY</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Atlanta's Premier Autos</p>
+                <p>Website by: <strong>DealerCenter</strong></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/scripts/apply.js"></script>
+</body>
+</html>
